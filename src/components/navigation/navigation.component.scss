@@ -1,0 +1,66 @@
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+.navigation-container {
+  display: flex;
+  flex-direction: row;
+  
+  // @media (min-width: 576px) {
+  //   h1 {
+  //     color: red;
+  //   }
+  // }
+
+  // // Medium devices (tablets, 768px and up)
+  // @media (min-width: 768px) {
+  //   h1 {
+  //     color: blue;
+  //   }
+  // }
+
+  // // Large devices (desktops, 992px and up)
+  // @media (min-width: 992px) {
+  //   h1 {
+  //     color: yellow;
+  //   }
+  // }
+
+  // // X-Large devices (large desktops, 1200px and up)
+  // @media (min-width: 1200px) {
+  //   h1 {
+  //     color: orange;
+  //   }
+  // }
+
+  // // XX-Large devices (larger desktops, 1400px and up)
+  // @media (min-width: 1400px) {
+  //   h1 {
+  //     color: green;
+  //   }
+  // }
+}
+
+.desktop-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.menu-wrapper {
+  display: inline;
+}
+
+.horizontal-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.horizontal-list li {
+  padding: 0 24px 0 24px;
+  float: left;
+}

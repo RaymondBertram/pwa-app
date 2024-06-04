@@ -1,0 +1,29 @@
+@import 'globals';
+
+
+
+:root {
+  background-color: $backgroundColor;
+}
+
+* {
+  font-family: Nunito, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 40px 0 40px;
+  background-color: $backgroundColor;
+}
+
+@font-face {
+  font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+

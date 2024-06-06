@@ -8,6 +8,7 @@
 
 * {
   font-family: Nunito, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .app-container {
@@ -26,4 +27,15 @@
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
+
+
+@media (min-width: 320px) {
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+  
+}
+
 

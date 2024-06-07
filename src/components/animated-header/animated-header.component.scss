@@ -1,0 +1,41 @@
+.header-text {
+  font-size: 70px;
+  font-weight: 600;
+  animation: fadeOutUp 4s ease-in-out forwards;
+}
+
+.header-text.next {
+  animation: slideInFromBottom 4s ease-in-out forwards;
+}
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 479px) {
+  .header-text {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+  }
+}

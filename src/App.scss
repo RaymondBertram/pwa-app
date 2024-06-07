@@ -1,7 +1,5 @@
 @import 'globals';
 
-
-
 :root {
   background-color: $backgroundColor;
 }
@@ -14,8 +12,13 @@
 .app-container {
   display: flex;
   flex-direction: column;
-  padding: 16px 40px 0 40px;
   background-color: $backgroundColor;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 40px 0 40px;
 }
 
 @font-face {
@@ -29,13 +32,16 @@
 @import '~bootstrap/scss/bootstrap.scss';
 
 
-@media (min-width: 320px) {
+@media (max-width: 991px) {
+
   .app-container {
     display: flex;
     flex-direction: column;
-    padding: 16px;
   }
-  
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+  }
 }
-
-

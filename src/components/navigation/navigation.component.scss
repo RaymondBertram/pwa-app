@@ -1,6 +1,12 @@
 .navigation-container {
   display: flex;
   flex-direction: row;
+  background-color: white;
+  padding: 4px 20px 4px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-radius: 8px;
 }
 
 .desktop-wrapper {
@@ -9,7 +15,6 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .menu-wrapper {
@@ -37,5 +42,11 @@
 @media (max-width: 991px) {
   .horizontal-list {
     display: none;
+  }
+  
+  .navigation-container {
+    display: flex;
+    flex-direction: row;
+    padding: 8xpx;
   }
 }

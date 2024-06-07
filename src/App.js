@@ -1,16 +1,18 @@
 import React from 'react';
 
-import './App.scss';
 import { Navigation } from './components/navigation/navigation.component';
 import { HomeScreen } from './screens/home/home.screen';
 import { Form } from './screens/form/form.screen';
+import './App.scss';
 
 function App() {
   return (
-    <div className="app-container">
+    <div className='app-container'>
       <Navigation />
-      <HomeScreen />
-      <Form/>
+      <div className="main-container">
+        <HomeScreen />
+        <Form/>
+      </div>
     </div>
   );
 }

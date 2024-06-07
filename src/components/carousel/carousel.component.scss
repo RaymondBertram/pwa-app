@@ -1,0 +1,23 @@
+.slider-container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    max-width: 100vw;
+}
+
+.slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+    padding: 20px;
+}
+
+@media (max-width: 479px) {
+    .slider-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+}

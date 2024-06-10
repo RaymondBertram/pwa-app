@@ -1,0 +1,89 @@
+@import '../../assets/scss/variables';
+
+.advantages-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.advantages-card {
+  display: flex;
+  background-color: $cardsBackgroundColorDeepBlue;
+  border-radius: 12px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 12px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.advantages-header {
+  font-size: 58px;
+}
+
+.advantages-paragraph {
+  font-size: 18px;
+}
+  
+.card-content-text {
+  color: $whiteColor;
+}
+
+.card-content-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 479px) {
+  .advantages-container {
+    display: flex;
+    padding: 8px;
+    border-radius: 16px;
+    height: fit-content;
+  }
+
+  .advantages-card {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 16px 16px 0px 16px;
+  }
+
+  .advantages-header {
+    font-size: 40px;
+    margin: 0 0 8px 0;
+    text-align: left;
+  }
+
+  .advantages-paragraph {
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .card-content-left {
+    display: flex;
+    opacity: 1;
+    transform: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-content-right {
+    margin-bottom: 8px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  
+  .card-content-image {
+    width: 200px;
+    height: 200px;
+    opacity: 0.5;
+  }
+}

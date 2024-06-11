@@ -1,5 +1,5 @@
 import React from "react";
-import { SmallCards } from "../../components/cards/small-cards.component";
+import { Card } from "../../components/cards/cards.component";
 
 import arrrow from "../../assets/icons/arrow.svg";
 import logo from "./../../assets/logos/logo512.png";
@@ -12,6 +12,18 @@ export const ProcessDiagramScreen = () => {
       "height": '60px',
       "marginBottom": ".5em",
     },
+    containerStyle: {
+      "backgroundColor": "white",
+      "flexDirection": "column",
+      "justifyContent": "space-between",
+      "alignItems": "center",
+      "height": "9.2em",
+      "width": "9.2em",
+      "marginBottom": "1.75em",
+      "padding": "1.75em",
+      "display": "flex",
+      "boxShadow": "0 4px 40px #1f29331f",
+    }
   };
 
   const styleBlackCards = {
@@ -22,6 +34,16 @@ export const ProcessDiagramScreen = () => {
     },
     containerStyle: {
       "backgroundColor": "rgb(31, 41, 51)",
+      "borderRadius": "16px",
+      "flexDirection": "column",
+      "justifyContent": "space-between",
+      "alignItems": "center",
+      "height": "9.2em",
+      "width": "9.2em",
+      "marginBottom": "1.75em",
+      "padding": "1.75em",
+      "display": "flex",
+      "boxShadow": "0 4px 40px #1f29331f",
     },
     textStyle: {
       "color": "white",
@@ -35,21 +57,21 @@ export const ProcessDiagramScreen = () => {
       </div>
       <div className="process-diagram-grid-area">
         <div className="process-diagram-left">
-          <SmallCards style={styleWhiteCards} img={logo} text={'Title Logo'}/>
-          <SmallCards style={styleWhiteCards} img={logo} text={'Title Logo'}/>
+          <Card style={styleWhiteCards} img={logo} text={'Title Logo'}/>
+          <Card style={styleWhiteCards} img={logo} text={'Title Logo'}/>
         </div>
         <div className="process-arrow">
             <img src={arrrow} alt="arrow" />
           </div>
         <div className="process-diagram-middle">
-          <SmallCards style={styleBlackCards} img={logo} text={'Title Logo'}/>
+          <Card style={styleBlackCards} img={logo} text={'Title Logo'}/>
         </div>
         <div className="process-arrow">
           <img src={arrrow} alt="arrow" />
         </div>
         <div className="process-diagram-right">
-          <SmallCards style={styleWhiteCards} img={logo} text={'Title Logo'}/>
-          <SmallCards style={styleWhiteCards} img={logo} text={'Title Logo'}/>
+          <Card style={styleWhiteCards} img={logo} text={'Title Logo'}/>
+          <Card style={styleWhiteCards} img={logo} text={'Title Logo'}/>
         </div>
       </div>
     </div>

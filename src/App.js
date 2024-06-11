@@ -22,6 +22,7 @@ function App() {
         <ProcessDiagramScreen />
         <Padding />
         <GetStarted />
+        <Padding />
         <Form/>
       </div>
     </div>

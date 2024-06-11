@@ -1,0 +1,28 @@
+.small-cards-container {
+  background-color: white;
+  border-radius: 16px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.2em;
+  width: 9.2em;
+  margin-bottom: 1.75em;
+  padding: 1.75em;
+  display: flex;
+  box-shadow: 0 4px 40px #1f29331f;
+}
+
+@media (max-width: 479px) {
+  .small-cards-container {
+    background-color: white;
+    border-radius: 16px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.75em;
+    padding: 8px;
+    display: flex;
+    box-shadow: 0 4px 40px #1f29331f;
+  }
+
+}

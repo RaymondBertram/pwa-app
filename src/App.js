@@ -7,6 +7,8 @@ import { Form } from './screens/form/form.screen';
 import { Advantages } from './screens/advantages/advantages.screen';
 
 import './App.scss';
+import { ProcessDiagramScreen } from './screens/processdiagram/processdiagram.screen';
+import { GetStarted } from './screens/get-started/get-started.screen';
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
         <Padding />
         <Advantages />
         <Padding />
+        <ProcessDiagramScreen />
+        <Padding />
+        <GetStarted />
         <Form/>
       </div>
     </div>

@@ -7,23 +7,23 @@ import './solution.screen.scss';
 export const Solution = () => {
   const cardsData = [
     {
-      h1Title: "Turnkey API solution designed to scale your business",
-      h2Title: "Built in mind for developers",
-      text: "Go from idea to implementation quickly with robust, bank-grade APIs. Our documentation, sample data and code snippets provide developers with powerful tools to launch your next innovation.",
+      h1Title: "Lorem ipsum dolor sit amet",
+      h2Title: "Lorem ipsum dolor sit amet,",
+      text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos",
       img: logo,
       color: "rgb(223, 209, 244)",
     },
     {
-      h1Title: "Turnkey API solution designed to scale your business",
-      h2Title: "Built in mind for developers",
-      text: "Go from idea to implementation quickly with robust, bank-grade APIs. Our documentation, sample data and code snippets provide developers with powerful tools to launch your next innovation.",
+      h1Title: "Lorem ipsum dolor sit amet",
+      h2Title: "Lorem ipsum dolor sit amet,",
+      text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos",
       img: logo,
       color: "rgb(223, 201, 192)",
     },
     {
-      h1Title: "Turnkey API solution designed to scale your business",
-      h2Title: "Built in mind for developers",
-      text: "Go from idea to implementation quickly with robust, bank-grade APIs. Our documentation, sample data and code snippets provide developers with powerful tools to launch your next innovation.",
+      h1Title: "Lorem ipsum dolor sit amet",
+      h2Title: "Lorem ipsum dolor sit amet,",
+      text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos",
       img: logo,
       color: "rgb(223, 243, 246)",
     },

@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomeScreen, Form, Advantages, ProcessDiagramScreen, GetStarted, Payment, Solution } from './screens';
+import { HomeScreen, Form, Advantages, ProcessDiagramScreen, GetStarted, Payment, Solution, Evolution } from './screens';
 import { Padding } from './components/padding/padding.component';
 import { Navigation } from './components/navigation/navigation.component';
 
@@ -20,6 +20,9 @@ function App() {
         <Payment />
         <Padding />
         <Solution />
+        <Padding />
+        <Evolution />
+        <Padding />
         <Form/>
       </div>
     </div>

@@ -32,6 +32,7 @@ export const Form = () => {
            Ich stimme den <a href="http://localhost:3000/#">Datenschutzbestimmungen</a> zu.
           </label>
         </div>
+        <button type="submit" className="btn btn-primary my-3">Absenden</button>
       </form>
     </section>
   );

@@ -8,18 +8,18 @@ import { Card } from "../../components/cards/cards.component";
 export const Advantages = () => {
   const cards = [
     {
-      title: "Eliminate chargebacks",
-      text: "Eliminate credit card chargebacks with open banking.",
+      title: "Lorem ipsum",
+      text: "Lorem ipsum dolor sit amet, consetetur sadipscing.",
       img: logo,
     },
     {
-      title: "Reduce cost",
-      text: "3x times less expensive than credit cards.",
+      title: "Lorem ipsum",
+      text: "Lorem ipsum dolor sit amet, consetetur sadipscing.",
       img: logo,
     },
     {
-      title: "Instant settlements",
-      text: "Payments are settled instantly into your bank account..",
+      title: "Lorem ipsum",
+      text: "Lorem ipsum dolor sit amet, consetetur sadipscing.",
       img: logo,
     },
   ];
@@ -78,7 +78,7 @@ export const Advantages = () => {
         </motion.div>
         <div className="card-content-right">
           <div className="card-content-text">
-            <h1 className="advantages-header">Tired of paying high Card fees?</h1>
+            <h1 className="advantages-header">Lorem ipsum dolor sit amet, consetetur sadipscing?</h1>
             <p className="advantages-paragraph">Join payments evolution with us. Accept bank payments that are settled in seconds.</p>
           </div>
           <div >

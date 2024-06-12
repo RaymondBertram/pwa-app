@@ -1,0 +1,46 @@
+.grid-child {
+    display: flex;
+    flex-direction: column;
+
+    .grid-child-logo {
+       
+    } 
+    .grid-child-h2 {
+        padding: 16px 0 8px 0;
+        font-weight: 400;
+        line-height: 1.2;
+
+    }
+    .grid-child-p {
+        padding: 8px 0 8px 0;
+        align-self: center;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+}
+
+@media (max-width: 479px) {
+    .grid-child {
+        display: flex;
+        flex-direction: column;
+    
+        .grid-child-logo {
+           
+        } 
+        .grid-child-h2 {
+            padding: 16px 0 8px 0;
+            font-weight: 400;
+            line-height: 1.2;
+    
+        }
+        .grid-child-p {
+            padding: 8px 0 8px 0;
+            align-self: center;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+    
+    }
+    
+}

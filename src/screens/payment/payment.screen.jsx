@@ -29,7 +29,7 @@ export const Payment = () => {
   return (
     <div className="payment-container">
       <div className="payment-text-area">
-        <h1 className="payment-header">Payment way with</h1>
+        <h1 className="payment-header">Lorem ipsum dolor</h1>
       </div>
       <div className="payment-card-block">
         <Card style={styleWhiteCards} img={logo} title={'Title Logo'}/>

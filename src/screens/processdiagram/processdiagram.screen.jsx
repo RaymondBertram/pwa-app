@@ -61,8 +61,8 @@ export const ProcessDiagramScreen = () => {
           <Card style={styleWhiteCards} img={logo} text={'Title Logo'}/>
         </div>
         <div className="process-arrow">
-            <img src={arrrow} alt="arrow" />
-          </div>
+          <img src={arrrow} alt="arrow" />
+        </div>
         <div className="process-diagram-middle">
           <Card style={styleBlackCards} img={logo} text={'Title Logo'}/>
         </div>

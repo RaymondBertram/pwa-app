@@ -1,15 +1,9 @@
 import React from 'react';
-
-import { Navigation } from './components/navigation/navigation.component';
+import { HomeScreen, Form, Advantages, ProcessDiagramScreen, GetStarted, Payment, Solution } from './screens';
 import { Padding } from './components/padding/padding.component';
-import { HomeScreen } from './screens/home/home.screen';
-import { Form } from './screens/form/form.screen';
-import { Advantages } from './screens/advantages/advantages.screen';
+import { Navigation } from './components/navigation/navigation.component';
 
 import './App.scss';
-import { ProcessDiagramScreen } from './screens/processdiagram/processdiagram.screen';
-import { GetStarted } from './screens/get-started/get-started.screen';
-import { Payment } from './screens/payment/payment.screen';
 
 function App() {
   return (
@@ -25,6 +19,7 @@ function App() {
         <Padding />
         <Payment />
         <Padding />
+        <Solution />
         <Form/>
       </div>
     </div>

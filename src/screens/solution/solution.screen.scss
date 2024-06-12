@@ -1,0 +1,9 @@
+.solution-container {
+  padding: 16px;
+}
+
+@media (max-width: 479px) {
+  .solution-container {
+    padding: 8px;
+  }
+}

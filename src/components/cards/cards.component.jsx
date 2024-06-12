@@ -2,14 +2,14 @@ import React from "react";
 
 import "./cards.component.scss";
 
-export const Cards = ({ title, text, img }) => {
+export const Card = ({ title, text, img, style }) => {
+  const { imageStyle, containerStyle, textStyle, headerStyle } = style;
 
-
-    return (
-        <div className="card-container">
-            <img className="card-img-container" src={img} alt={`${img}`} width={60} height={60}/>
-            <h1 className="card-header">{title}</h1>
-            <p>{text}</p>
-        </div>
-    );
+  return (
+    <div className="cards-container" style={containerStyle}>
+      <img src={img} alt={`${img}`} style={imageStyle} />
+      <h1 style={headerStyle}>{title}</h1>
+      <p style={textStyle}>{text}</p>
+    </div>
+  );
 };

@@ -1,12 +1,11 @@
 import React from "react";
-import { motion, useScroll } from "framer-motion";
-import { Cards } from "../../components/cards/cards.component";
+import { motion } from "framer-motion";
 
 import logo from "../../assets/logos/logo512.png";
 import "./advantages.screen.scss";
+import { Card } from "../../components/cards/cards.component";
 
 export const Advantages = () => {
-  const { scrollYProgress } = useScroll();
   const cards = [
     {
       title: "Eliminate chargebacks",
@@ -30,6 +29,31 @@ export const Advantages = () => {
     hidden: { opacity: 0, scale: 0 },
   };
 
+  const cardStyle = {
+    imageStyle: {
+      "marginBottom": "36px",
+      "width": "60px",
+      "height": "60px",
+    },
+    containerStyle: {
+      "backgroundColor": "#a9cecc",
+      "borderRadius": "16px",
+      "padding": "8px",
+      "marginBottom": "16px",
+      "width": "100%",
+
+    },
+    headerStyle: {
+      "marginBottom": '8px',
+      "fontSize": '40px',
+      "lineHeight": "1.3",
+    },
+    textStyle: {
+      "fontSize": "16px",
+      "lineHeight": "1.3",
+    },
+  }
+
  return (
     <div className="advantages-container">
       <div className="advantages-card">
@@ -42,11 +66,12 @@ export const Advantages = () => {
           className="card-content-left">
           {cards.map((el) => {
             return (
-              <Cards
+              <Card
                 key={el.title}
                 title={el.title}
                 text={el.text}
                 img={el.img}
+                style={cardStyle}
               />
             );
           })}

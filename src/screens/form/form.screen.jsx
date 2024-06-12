@@ -5,12 +5,15 @@ import "./form.screen.scss";
 export const Form = () => {
   const formRef = useRef(null);
 
-  console.log(formRef);
-
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Call your API here with the form data
+  };
+  
   return (
     <section className="form-container" id="form">
       <h1>Kontaktformular</h1>
-      <form ref={formRef}>
+      <form ref={formRef} onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="firstName">Vorname</label>
          <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Vorname"/>

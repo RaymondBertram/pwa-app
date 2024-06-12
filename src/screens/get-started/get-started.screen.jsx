@@ -9,18 +9,18 @@ export const GetStarted = () => {
   const cards = [
     {
       img: logo,
-      title: "Balance",
-      text: "Verify real-time account balances.",
+      title: "Title 1",
+      text: "Lorem ipsum dolor sit.",
     },
     {
       img: logo,
-      title: "Transactions",
-      text: "Access detailed transaction history.",
+      title: "Title 2",
+      text: "Lorem ipsum dolor sit.",
     },
     {
       img: logo,
-      title: "Bank details",
-      text: "Verify users’ identities and reduce fraud.",
+      title: "Title 3",
+      text: "Lorem ipsum dolor sit.",
     },
   ];
 
@@ -33,8 +33,7 @@ export const GetStarted = () => {
     containerStyle: {
       backgroundColor: "#f1d9d0",
       borderRadius: "16px",
-      padding: "8px",
-      marginBottom: "16px",
+      padding: "64px",
       display: "flex",
       flexDirection: "column",
       justifyContent: "space-evenly",
@@ -67,7 +66,7 @@ export const GetStarted = () => {
         <div className="get-started-content-left">
           <div className="card-content-text">
             <h1 className="get-started-header">
-              Unlock the power of banking data
+              Lorem ipsum dolor sit amet, consetetur
             </h1>
           </div>
         </div>

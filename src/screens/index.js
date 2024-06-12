@@ -5,3 +5,4 @@ export * from './home/home.screen';
 export * from './payment/payment.screen';
 export * from './processdiagram/processdiagram.screen';
 export * from './solution/solution.screen';
+export * from './evolution/evolution.screen';

@@ -53,7 +53,7 @@ export const ProcessDiagramScreen = () => {
   return (
     <div className="process-diagram-container">
       <div className="process-diagram-text-area">
-        <h1 className="process-diagram-header">One payment power grid</h1>
+        <h1 className="process-diagram-header">Lorem ipsum dolor sit</h1>
       </div>
       <div className="process-diagram-grid-area">
         <div className="process-diagram-left">

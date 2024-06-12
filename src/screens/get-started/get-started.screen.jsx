@@ -35,8 +35,6 @@ export const GetStarted = () => {
       borderRadius: "16px",
       padding: "8px",
       marginBottom: "16px",
-      height: "30em",
-      width: "20em",
       display: "flex",
       flexDirection: "column",
       justifyContent: "space-evenly",

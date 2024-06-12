@@ -9,6 +9,7 @@ import { Advantages } from './screens/advantages/advantages.screen';
 import './App.scss';
 import { ProcessDiagramScreen } from './screens/processdiagram/processdiagram.screen';
 import { GetStarted } from './screens/get-started/get-started.screen';
+import { Payment } from './screens/payment/payment.screen';
 
 function App() {
   return (
@@ -16,12 +17,13 @@ function App() {
       <Navigation />
       <div className="main-container">
         <HomeScreen />
-        <Padding />
         <Advantages />
         <Padding />
         <ProcessDiagramScreen />
         <Padding />
         <GetStarted />
+        <Padding />
+        <Payment />
         <Padding />
         <Form/>
       </div>

@@ -27,7 +27,7 @@ export const Payment = () => {
   };
 
   return (
-    <div className="payment-container">
+    <section className="payment-container" id="payment">
       <div className="payment-text-area">
         <h1 className="payment-header">Lorem ipsum dolor</h1>
       </div>
@@ -44,6 +44,6 @@ export const Payment = () => {
       </div>
       
 
-    </div>
+    </section>
   );
 };

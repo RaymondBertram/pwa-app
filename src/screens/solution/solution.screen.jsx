@@ -30,10 +30,10 @@ export const Solution = () => {
   ];
 
   return (
-    <div className="solution-container">
+    <section className="solution-container" id="solution">
       <div className="solution-card-container">
         {cardsData.map((card, index) => <BigCards key={index} h1={card.h1Title} h2={card.h2Title} text={card.text} color={card.color} img={card.img} i={index}/>)}
       </div>
-    </div>
+    </section>
   )
 };

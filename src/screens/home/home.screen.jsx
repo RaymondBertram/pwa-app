@@ -13,7 +13,7 @@ export const HomeScreen = () => {
       <div className="hero-parent">
         <div className="hero-text-block">
           <AnimatedHeader headers={headers}/>
-          <h2  className="header-text-constant">Dein Produkt</h2>
+          <h2  className="header-text-constant">Dein <span className="underlined-h2">Produkt</span></h2>
           <p className="home-info-paragraph">Our advanced technology and secure systems provide a safe and reliable way to transfer funds, allowing you to benefit from reduced processing times and improved efficiency.</p>
         </div>
         <div className="hero-image-block">

@@ -61,7 +61,7 @@ export const GetStarted = () => {
 };
 
   return (
-    <div className="get-started-container">
+    <section className="get-started-container" id="get-started">
       <div className="get-started-card">
         <div className="get-started-content-left">
           <div className="card-content-text">
@@ -89,6 +89,6 @@ export const GetStarted = () => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

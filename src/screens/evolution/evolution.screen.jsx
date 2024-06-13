@@ -51,13 +51,13 @@ export const Evolution = () => {
   ];
 
   return (
-    <div className="evolution-container">
+    <section className="evolution-container" id="evolution">
       <div className="evolution-header">
         <h1 className="evolution-header-h1">Header Title as an Example</h1>
       </div>
       <div className="evolution-grid">
         {data.map((item, index) => <IconGrid key={index} icon={item.icon} title={item.title} description={item.description} width={item.width} height={item.height} />)}
       </div>
-    </div>
+    </section>
   )
 };

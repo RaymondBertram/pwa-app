@@ -1,25 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { BurgerMenu } from "../burger-menu/burger-menu.component";
 
 import logo from "../../assets/logos/logo512.png";
 import "./navigation.component.scss";
 
 export const Navigation = () => {
-  const [pos, setPos] = useState(1);
-
-  useEffect (()=>{
-    document.addEventListener("scroll", e => {
-        let scrolled = document.scrollingElement.scrollTop;
-        if (scrolled >= 200){
-           setPos(0)
-        } else {
-           setPos(1)
-        }
-    })
-  },[])
-
   return (
-    <nav className="navigation-container" style={{ opacity: pos, transition: "visibility 0s 1s, opacity 1s linear" }}>
+    <nav className="navigation-container">
       <div className="desktop-wrapper">
         <div className="logo-wrapper">
           <a href="#home">
@@ -29,7 +16,9 @@ export const Navigation = () => {
         <div className="menu-wrapper">
           <ul className="horizontal-list">
             <li><a className="link-text" href="#home">List Item 1</a></li>
-            <li><a className="link-text" href="#form">List Item 2</a></li>
+            <li><a className="link-text" href="#advantages">List Item 2</a></li>
+            <li><a className="link-text" href="#payment">List Item 3</a></li>
+            <li><a className="link-text" href="#form">List Item 4</a></li>
           </ul>
         </div>
         <>

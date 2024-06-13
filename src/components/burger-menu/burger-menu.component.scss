@@ -13,7 +13,7 @@
     width: 100%;
     height: 0;
     background-color: white;
-    animation: slideDown 3s forwards;
+    animation: slideDown 1s forwards;
     z-index: 1;
 }
 
@@ -21,7 +21,7 @@
     text-decoration: none;
     color: black;
     cursor: pointer;
-    animation: fadeIn 3s ease-in-out forwards;
+    animation: fadeIn 1s ease-in-out forwards;
     opacity: 0;
 }
 

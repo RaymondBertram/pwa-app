@@ -7,11 +7,11 @@ import "./carousel.component.scss";
 export const Slider = () => {
   const variants = {
     animate: {
-      x: ['50%', '0%', '-50%'], // Animation steps
+      x: ['100%', '-50%'], // Animation steps
       transition: {
         x: {
           repeat: Infinity,
-          duration: 15,
+          duration: 20,
           ease: "linear"
         }
       }

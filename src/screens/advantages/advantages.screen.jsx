@@ -55,7 +55,7 @@ export const Advantages = () => {
   }
 
  return (
-    <div className="advantages-container">
+    <section className="advantages-container" id="advantages">
       <div className="advantages-card">
         <motion.div 
           initial={"hidden"}
@@ -78,8 +78,8 @@ export const Advantages = () => {
         </motion.div>
         <div className="card-content-right">
           <div className="card-content-text">
-            <h1 className="advantages-header">Lorem ipsum dolor sit amet, consetetur sadipscing?</h1>
-            <p className="advantages-paragraph">Join payments evolution with us. Accept bank payments that are settled in seconds.</p>
+            <h1 className="advantages-header">Lorem ipsum dolor <span className="advantages-header-underlined">sit amet</span></h1>
+            <p className="advantages-paragraph">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
           </div>
           <div >
             <img className="card-content-image" src={logo} alt="logo" />
@@ -87,6 +87,6 @@ export const Advantages = () => {
         </div>
       </div>
       
-    </div>
+    </section>
  );
 };

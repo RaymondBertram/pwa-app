@@ -2,6 +2,7 @@ import React from 'react';
 import { HomeScreen, Form, Advantages, ProcessDiagramScreen, GetStarted, Payment, Solution, Evolution } from './screens';
 import { Padding } from './components/padding/padding.component';
 import { Navigation } from './components/navigation/navigation.component';
+import { Footer } from './components/footer/footer.component';
 
 import './App.scss';
 
@@ -11,6 +12,7 @@ function App() {
       <Navigation />
       <div className="main-container">
         <HomeScreen />
+        <Padding />
         <Advantages />
         <Padding />
         <ProcessDiagramScreen />
@@ -24,6 +26,8 @@ function App() {
         <Evolution />
         <Padding />
         <Form/>
+        <Padding />
+        <Footer />
       </div>
     </div>
   );

@@ -8,12 +8,6 @@ import "./burger-menu.component.scss";
 export const BurgerMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // If open ==> opacity main-container = 0
-  // Replace main container with the list of links
-
-  // isOpen class gets activated when the burger menu is clicked
-  // The overlay is displayed when the burger menu is clicked
-
   return (
     <>
       <img
@@ -49,8 +43,33 @@ export const BurgerMenu = () => {
                 </a>
               </li>
               <li>
-                <a className="link-text-burger-menu" href="#form">
+                <a className="link-text-burger-menu" href="#advantages">
                   List Item 2
+                </a>
+              </li>
+              <li>
+                <a className="link-text-burger-menu" href="#process-diagram">
+                  List Item 3
+                </a>
+              </li>
+              <li>
+                <a className="link-text-burger-menu" href="#get-started">
+                  List Item 4
+                </a>
+              </li>
+              <li>
+                <a className="link-text-burger-menu" href="#payment">
+                  List Item 5
+                </a>
+              </li>
+              <li>
+                <a className="link-text-burger-menu" href="#solution">
+                  List Item 6
+                </a>
+              </li>
+              <li>
+                <a className="link-text-burger-menu" href="#evolution">
+                  List Item 7
                 </a>
               </li>
             </ul>

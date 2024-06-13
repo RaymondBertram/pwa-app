@@ -51,7 +51,7 @@ export const ProcessDiagramScreen = () => {
   }
 
   return (
-    <div className="process-diagram-container">
+    <section className="process-diagram-container" id="process-diagram">
       <div className="process-diagram-text-area">
         <h1 className="process-diagram-header">Lorem ipsum dolor sit</h1>
       </div>
@@ -74,6 +74,6 @@ export const ProcessDiagramScreen = () => {
           <Card style={styleWhiteCards} img={logo} text={'Title Logo'}/>
         </div>
       </div>
-    </div>
+    </section>
   )
 };

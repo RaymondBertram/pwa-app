@@ -17,8 +17,8 @@ export const AnimatedHeader = ({ headers }) => {
           return headers[nextIndex];
         });
         setNextHeader(false);
-      }, 4000); // Delay the change of header
-    }, 4000); // Change header every 6 seconds
+      }, 2000); // Delay the change of header
+    }, 3000); // Change header every 6 seconds
 
     return () => clearInterval(interval);
   // eslint-disable-next-line react-hooks/exhaustive-deps

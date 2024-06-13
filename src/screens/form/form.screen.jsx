@@ -12,8 +12,8 @@ export const Form = () => {
   
   return (
     <section className="form-container" id="form">
-      <h1>Kontaktformular</h1>
-      <form ref={formRef} onSubmit={handleSubmit}>
+      <h1 className="form-header">Kontaktformular</h1>
+      <form ref={formRef} onSubmit={handleSubmit} className="form-parent">
         <div className="form-group">
           <label htmlFor="firstName">Vorname</label>
          <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Vorname"/>
@@ -32,7 +32,9 @@ export const Form = () => {
            Ich stimme den <a href="http://localhost:3000/#">Datenschutzbestimmungen</a> zu.
           </label>
         </div>
-        <button type="submit" className="btn btn-primary my-3">Absenden</button>
+        <div className="form-button-wrapper">
+          <button type="submit" className="btn btn-primary my-3 form-submit-button">Absenden</button>
+        </div>
       </form>
     </section>
   );

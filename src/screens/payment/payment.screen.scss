@@ -58,3 +58,14 @@
     transform: rotate(90deg);
   }
 }
+
+@media (max-width: 768px) {
+  .payment-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50vh;
+    padding: 16px 16px 0 16px;
+  }
+}
+

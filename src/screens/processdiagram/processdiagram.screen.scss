@@ -88,3 +88,24 @@
     line-height: 1.1;
   }
 }
+
+@media (max-width: 768px) {
+  .process-diagram-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+
+    .process-diagram-grid-area {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .process-arrow {
+      transform: rotate(90deg);
+    }
+  }
+}
+

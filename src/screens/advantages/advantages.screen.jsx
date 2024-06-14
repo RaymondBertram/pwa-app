@@ -81,7 +81,7 @@ export const Advantages = () => {
             <h1 className="advantages-header">Lorem ipsum dolor <span className="advantages-header-underlined">sit amet</span></h1>
             <p className="advantages-paragraph">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
           </div>
-          <div >
+          <div className="card-content-image-container">
             <img className="card-content-image" src={logo} alt="logo" />
           </div>
         </div>

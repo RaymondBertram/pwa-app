@@ -51,7 +51,7 @@
         height: 100%;
       }
     }
-    
+
   }
 }
 
@@ -61,7 +61,7 @@
     display: flex;
     position: sticky;
     top: 15%;
-  
+
     .big-cards {
       display: flex;
       flex-direction: column;
@@ -70,46 +70,116 @@
       border-radius: 24px;
       margin: 5px;
       position: sticky;
-  
+
       .big-card-header {
         font-size: 40px;
         text-align: center;
       }
-  
+
       .big-card-block-text {
         width: 100%;
         padding-right: 32px;
       }
-  
+
       .big-card-block {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
       }
-  
+
       .big-card-block-h2 {
         font-size: 30px;
         font-weight: 400;
         padding-bottom: 32px;
-  
+
       }
-  
+
       .big-card-block-p {
         font-size: 16px;
         opacity: .6;
       }
-  
+
       .big-card-block-img {
         overflow: hidden;
-  
+
         .big-card-image {
           width: 100%;
           height: 100%;
         }
       }
-      
+
     }
   }
+}
 
+@media (max-width: 768px) {
+  .big-cards-container {
+    height: 100vh;
+    display: flex;
+    position: sticky;
+    top: 15%;
+
+    .big-cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 6px 16px 6px 16px;
+      border-radius: 24px;
+      margin: 5px;
+      position: sticky;
+
+      .big-card-header {
+        font-size: 40px;
+        text-align: center;
+      }
+
+      .big-card-block-text {
+        width: 100%;
+        padding-right: 32px;
+      }
+
+      .big-card-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .big-card-block-h2 {
+        font-size: 30px;
+        font-weight: 400;
+        padding-bottom: 32px;
+
+      }
+
+      .big-card-block-p {
+        font-size: 16px;
+        opacity: .6;
+        padding-bottom: 32px;
+      }
+
+      .big-card-block-img {
+        overflow: hidden;
+
+        .big-card-image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .big-card-block-img {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    .big-card-image {
+      width: 90%;
+      height: 90%;
+    }
+  }
 }

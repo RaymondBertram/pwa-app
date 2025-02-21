@@ -1,30 +1,31 @@
-import React, { useState, useEffect} from "react";
-
-import "./animated-header.component.scss";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export const AnimatedHeader = ({ headers }) => {
-  const [currentHeader, setCurrentHeader] = useState(headers[0]);
-  const [nextHeader, setNextHeader] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setNextHeader(true);
-      setTimeout(() => {
-        setCurrentHeader(prevHeader => {
-          const currentIndex = headers.indexOf(prevHeader);
-          const nextIndex = (currentIndex + 1) % headers.length;
-          
-          return headers[nextIndex];
-        });
-        setNextHeader(false);
-      }, 2000); // Delay the change of header
-    }, 3000); // Change header every 6 seconds
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % headers.length);
+    }, 4000); // Change header every 4 seconds
 
     return () => clearInterval(interval);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [headers.length]);
 
   return (
-    <h2 className={`header-text ${nextHeader ? 'next' : ''}`}>{currentHeader}</h2>
+    <div className="header-container">
+      <AnimatePresence mode="wait">
+        <motion.h2
+          key={headers[currentIndex]}
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -100 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+          className="header-text"
+        >
+          {headers[currentIndex]}
+        </motion.h2>
+      </AnimatePresence>
+    </div>
   );
 };

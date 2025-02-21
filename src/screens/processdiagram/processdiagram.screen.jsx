@@ -50,6 +50,8 @@ export const ProcessDiagramScreen = () => {
     }
   }
 
+  /*  Make here some improvements */
+
   return (
     <section className="process-diagram-container" id="process-diagram">
       <div className="process-diagram-text-area">

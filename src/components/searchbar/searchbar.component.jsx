@@ -15,7 +15,7 @@ export const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <div className="searchbar-container">
+    <div className="flex items-center w-full px-5 py-5 box-border mx-0 justify-center lg:px-20">
       <div className="searchbar-input-wrapper">
         <input
           type="text"

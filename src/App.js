@@ -1,32 +1,31 @@
-import React from 'react';
-import { HomeScreen, Form, Advantages, ProcessDiagramScreen, GetStarted, Payment, Solution, Evolution } from './screens';
-import { Padding } from './components/padding/padding.component';
-import { Navigation } from './components/navigation/navigation.component';
-import { Footer } from './components/footer/footer.component';
+import React from "react";
+import {
+  HomeScreen,
+  Form,
+  Services,
+  ProcessDiagramScreen,
+  Solution,
+  Advantages,
+  Team,
+} from "./screens";
+import { Navigation } from "./components/navigation/navigation.component";
+import { Footer } from "./components/footer/footer.component";
 
-import './App.scss';
+import "./App.scss";
 
 function App() {
   return (
-    <div className='app-container'>
+    <div className="app-container">
       <Navigation />
       <div className="main-container">
         <HomeScreen />
-        <Padding />
-        <Advantages />
-        <Padding />
+        <Services />
         <ProcessDiagramScreen />
-        <Padding />
-        <GetStarted />
-        <Padding />
-        <Payment />
-        <Padding />
         <Solution />
-        <Padding />
-        <Evolution />
-        <Padding />
-        <Form/>
-        <Padding />
+        <Advantages />
+        <Team />
+        {/* <Evolution /> */}
+        <Form />
         <Footer />
       </div>
     </div>

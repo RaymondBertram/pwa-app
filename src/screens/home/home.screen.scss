@@ -42,18 +42,10 @@
     padding: 20px 0 20px 0;
   }
 
-  .marquee-slider {
-    display: flex;
-    flex-direction: row;
+  .hero-video-block {
+    height: 100%;
   }
 
-  .hero-video {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 20px;
-  }
 
   .hero-search {
     width: 100%;

@@ -38,7 +38,7 @@ export const Team = () => {
           x: ["0%", "-100%"],
           transition: {
             ease: "linear",
-            duration: 40, // Geschwindigkeit der Animation
+            duration: 100, // Geschwindigkeit der Animation
             repeat: 0, // Keine Wiederholung hier
           },
         });

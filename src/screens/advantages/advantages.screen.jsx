@@ -45,7 +45,7 @@ export const Advantages = () => {
           x: ["0%", "-100%"],
           transition: {
             ease: "linear",
-            duration: 40, // Geschwindigkeit des Scrolls
+            duration: 90, // Geschwindigkeit des Scrolls
             repeat: 0, // Kein automatisches Wiederholen
           },
         });

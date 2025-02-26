@@ -1,81 +1,50 @@
 import React from "react";
-import { Card } from "../../components/cards/cards.component";
 
-import arrrow from "../../assets/icons/arrow.svg";
+import arrow from "../../assets/icons/arrow.svg";
 import logo from "./../../assets/logos/logo512.png";
 import "./processdiagram.screen.scss";
 
-export const ProcessDiagramScreen = () => {
-  const styleWhiteCards = {
-    imageStyle: {
-      "width": '60px',
-      "height": '60px',
-      "marginBottom": ".5em",
-    },
-    containerStyle: {
-      "backgroundColor": "white",
-      "flexDirection": "column",
-      "justifyContent": "space-between",
-      "alignItems": "center",
-      "height": "9.2em",
-      "width": "9.2em",
-      "marginBottom": "1.75em",
-      "padding": "1.75em",
-      "display": "flex",
-      "boxShadow": "0 4px 40px #1f29331f",
-    }
-  };
-
-  const styleBlackCards = {
-    imageStyle: {
-      "width": '60px',
-      "height": '60px',
-      "marginBottom": ".5em",
-    },
-    containerStyle: {
-      "backgroundColor": "rgb(31, 41, 51)",
-      "borderRadius": "16px",
-      "flexDirection": "column",
-      "justifyContent": "space-between",
-      "alignItems": "center",
-      "height": "9.2em",
-      "width": "9.2em",
-      "marginBottom": "1.75em",
-      "padding": "1.75em",
-      "display": "flex",
-      "boxShadow": "0 4px 40px #1f29331f",
-    },
-    textStyle: {
-      "color": "white",
-    }
-  }
-
-  /*  Make here some improvements */
-
+const CustomCard = ({ img, text }) => {
   return (
-    <section className="process-diagram-container" id="process-diagram">
-      <div className="process-diagram-text-area">
-        <h1 className="process-diagram-header">Lorem ipsum dolor sit</h1>
-      </div>
-      <div className="process-diagram-grid-area">
-        <div className="process-diagram-left">
-          <Card style={styleWhiteCards} img={logo} text={'Title Logo'}/>
-          <Card style={styleWhiteCards} img={logo} text={'Title Logo'}/>
+    <div className="bg-gray-100 rounded-[2.25em] flex flex-col justify-center items-center w-[21.5em] h-[21.5em] p-10 text-center shadow-lg">
+      <img src={img} alt="icon" className="mb-4 w-16 h-16 object-cover" />
+      <p className="text-gray-700 text-lg font-semibold">{text}</p>
+    </div>
+  );
+};
+
+export const ProcessDiagramScreen = () => {
+  return (
+    <section
+      className="w-full flex justify-center py-10 min-h-screen"
+      id="process-diagram"
+    >
+      <div className="flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-8">
+        {/* Erste Karte */}
+        <div className="flex flex-col items-center">
+          <CustomCard img={logo} text="Ihre Anfrage" />
         </div>
-        <div className="process-arrow">
-          <img src={arrrow} alt="arrow" />
+
+        {/* Erster Pfeil */}
+        <div className="flex justify-center md:rotate-0 rotate-90">
+          <img src={arrow} alt="arrow" className="w-10 h-10 md:w-12 md:h-12" />
         </div>
-        <div className="process-diagram-middle">
-          <Card style={styleBlackCards} img={logo} text={'Title Logo'}/>
+
+        {/* Zweite Karte */}
+        <div className="flex flex-col items-center">
+          <CustomCard img={logo} text="Wir Analysieren" />
         </div>
-        <div className="process-arrow">
-          <img src={arrrow} alt="arrow" />
+
+        {/* Zweiter Pfeil */}
+        <div className="flex justify-center md:rotate-0 rotate-90">
+          <img src={arrow} alt="arrow" className="w-10 h-10 md:w-12 md:h-12" />
         </div>
-        <div className="process-diagram-right">
-          <Card style={styleWhiteCards} img={logo} text={'Title Logo'}/>
-          <Card style={styleWhiteCards} img={logo} text={'Title Logo'}/>
+
+        {/* Dritte Karte */}
+        <div className="flex flex-col items-center">
+          <CustomCard img={logo} text="Wir Beraten Sie Individuell" />
         </div>
       </div>
     </section>
-  )
+  );
 };
